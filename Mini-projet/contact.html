@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Ma Boutique</title>
+</head>
+<body>
+    <header>
+        <h1>Ma Boutique</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact"style="background-color: #f0f0f0; padding: 92px;">
+        <h2>Contactez-nous</h2>
+        <p>Remplissez le formulaire ci-dessous pour nous contacter.</p>
+
+        <form action="traitement_formulaire.php" method="post">
+            <label for="adresse">Adresse Postale :</label>
+            <select id="adresse" name="adresse" required>
+                <option value="adresse1">Sousse</option>
+                <option value="adresse2">Tunis</option>
+                <option value="adresse3">Ariana</option>
+                <option value="adresse3">Bizerte</option>
+                <option value="adresse3">Nabeul</option>
+
+            </select>
+            <br> <br> <br>
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" placeholder="xy@gmail.com">
+<br><br><br>
+            <label for="reclamation">Espace de Réclamation :</label>
+            <textarea id="reclamation" name="reclamation" rows="4" cols="50" required></textarea>
+            <br><br><br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023  Ma Boutique. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
